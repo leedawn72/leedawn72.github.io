@@ -1,0 +1,159 @@
+<!DOCTYPE html><!--22061077위다함-->
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body{
+        font-family: Arial;
+        padding: 10px;
+        background-color: #181616;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      .topnav{
+        overflow: hidden;
+      }
+      .topnav a{
+        float: right;
+        display: block;
+        padding: 14px 5px;
+      }
+      .leftcolumn{
+        float: left;
+        width: 60%;
+        padding-left: 100px;
+        padding-top: 50px;
+        padding-bottom: 100px;
+      }
+      .rightcolumn{
+        float: left;
+        width: 40%;
+        padding-left: 30px;
+
+      }
+      .fakeimg{
+        background-color: #fa8072;
+        width: 100%;
+        padding: 20px;
+        border: solid 1px black;
+      }
+      .fakeimg2{
+        background-color: #ffffff;
+        width: 100%;
+        padding: 20px;
+        border: solid 1px black;
+      }
+      .fakeimg3{
+        background-color: #f4f4f4;
+        width: 100%;
+        padding: 20px;
+        border: solid 1px black;
+      }
+      .card{
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+      .row:after{
+        content:"";
+        display: table;
+        clear: both;
+      }
+      h2{
+        color: #ffeb3e;
+      }
+      p {
+        color: white;
+      }
+      h4{
+        color: white;
+      }
+      .footer{
+        padding: 20px;
+        text-align: center;
+        background: #ffeb3e;
+      }
+      .container {
+        position: relative;
+        width: 50%;
+      }
+
+      .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+      }
+
+      .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        transform: translate(-0%, -100%);
+        text-align: center;
+      }
+
+      .container:hover .image {
+        opacity: 0.3;
+      }
+
+      .container:hover .middle {
+        opacity: 1;
+      }
+      @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+      a:link :hover{
+        filter: brightness(70%);
+      }
+    </style>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="topnav">
+        <a href="#"><img src="img/button7.png"></a>
+        <a href="design.html"><img src="img/button6 over.png"></a>
+        <a href="#"><img src="img/button5.png"></a>
+        <a href="programming.html"><img src="img/button4 over.png"></a>
+        <a href="#"><img src="img/button3.png"></a>
+        <a href="planning.html"><img src="img/button2 over.png"></a>
+        <a href="#"><img src="img/button1.png"></a>
+        <a href="index.html" style="float:left"><img src="img/logo.png"></a>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <h2> THREE.상견니 디지털 브로슈어 </h2>
+        <video src="design.mp4" controls width="100%">
+      </div>
+      <div class="rightcolumn">
+        <br><br><br><br><br><br>
+          <p>
+            copyright © & widaham. all rights reserved
+            <br><br><br><br><br>
+            콘텐츠 디자인 직무수행능력평가2 평가 과제로<br>
+            상견니라는 주제로 디지털 웹 브로슈어 작업을<br>
+            진행하였다.</p>
+            <br><br>
+        <h4> 2020.10.17 </h4>
+      </div>
+    </div>
+    <div class="footer">
+    </div>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Web Essay DAM</title>
+    <style media="screen">
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      video #vid {
+        position:absolute;
+        top:0;
+        z-index: 1;
+      }
+      body {
+          background-color: #000000;
+          border: 0;
+      }
+      #main {
+        top: 0;
+        position:absolute;
+        z-index: -100;
+      }
+      .nav {
+        margin: 40px 0 0 50px;
+        position:fixed;
+        z-index: 10;
+      }
+      .logo {
+        top: 50px;
+        position:fixed;
+        z-index: 1;
+      }
+
+      .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.8);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+
+      .overlay-content {
+        font-family: 'Noto Sans KR', sans-serif;
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+      }
+
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 24px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .overlay a:hover, .overlay a:focus {
+        color: #999999;
+      }
+
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">HOME</a>
+        <a href="kr_typo.html">kr_typo</a>
+        <a href="kr_space.html">kr_space</a>
+        <a href="kr_size.html">kr_size</a>
+        <a href="eg_typo.html">eg_typo</a>
+        <a href="eg_space.html">eg_space</a>
+        <a href="eg_size.html">eg_size</a>
+        <a href="shape.html">shape&color</a>
+        <a href="photo.html">photo</a>
+      </div>
+    </div>
+    <video autoplay="autoplay" muted="muted" id="vid">
+      <source src="main_space_eg.mp4" type="video/mp4">
+    </video>
+    <div id="main">
+      <div class="nav">
+        <span style="font-size:40px;color:white;cursor:pointer" onclick="openNav()"><img src="./img/button2.png"></span>
+      </div>
+      <a style="display:scroll;position:fixed;bottom:30px;right:10px;" href="eg_space.html"><img src="./img/top.png" width="70%"></a>
+      <img src="./img/eg_space.jpg" width=100% height=100%>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
+  </body>
+</html>

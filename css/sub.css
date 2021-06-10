@@ -1,0 +1,140 @@
+* { margin:0; padding:0; border:0; }
+html, body { width:100%; height:100vh; overflow:hidden; }
+
+body {
+  background-color: #000000;
+}
+
+article {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+img { max-width: 100%; height: auto; }
+
+section { width:100vw; height:100vh; }
+
+.horizontal-section-wrap article { float:left; width:100vw; height:100vh; }
+
+.clear:after { content:""; display:block; clear:both; }
+
+.var-wrap {
+    width: 400vw;
+    height: 100%;
+}
+
+.serviceDes {
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    position: relative;
+}
+
+.clear ::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.text {
+  position:relative;
+  float: left;
+  width: 50%;
+  height: 100vh;
+  /* border: solid 1px green; */
+}
+
+.title {
+  position:relative;
+  width: 100%;
+  height: 33.3%;
+  /* border: solid 1px red; */
+  overflow:hidden;
+}
+
+.detail {
+  position:relative;
+  width: 100%;
+  height: 33.3%;
+  /* border: solid 1px red; */
+}
+
+.footer {
+  position:relative;
+  width: 100%;
+  height: 33.3%;
+  /* border: solid 1px red; */
+}
+
+.photo {
+  position:relative;
+  float: right;
+  width: 50%;
+  height: 100vh;
+  /* border: solid 1px green; */
+  overflow: hidden;
+  background-size:cover;
+  background-position:50%;
+}
+
+.wrap {
+  height:100%;
+  position:relative;
+  width:500%;
+}
+
+.box{
+  height:100%;
+  position:relative;
+  color:#ffffff;
+  font-size:24pt;
+  float:left;
+  width:calc(100%/5);}
+
+.title_img {
+  position : absolute;
+  padding: 12% 0 0 8%;
+  max-width:100%;
+  height: auto !important;
+  object-fit:cover;
+}
+
+.detail_img {
+  position : absolute;
+  padding-left: 8%;
+  margin-bottom: 5%;
+  max-width:100%;
+  height: auto !important;
+  object-fit:cover;
+}
+
+.footer_img {
+  position : absolute;
+  padding-left: 8%;
+  max-width:100%;
+  height: auto !important;
+  object-fit:cover;
+  z-index: -1;
+}
+
+.main_button {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    max-width:100%;
+    height:auto;
+    top: 100px;
+    left: 0;
+    right: 0;
+}
+
+#content {
+  position: absolute;
+  text-align: center;
+  max-width:100%;
+  height:auto;
+  top: 500px;
+  left: 0;
+  right: 0;
+}
